@@ -6,6 +6,7 @@ They are fetched dynamically at runtime based on the integration event type bein
 Event-driven
 Microservice-safe
 Versioned templates
+
 Zero redeploys when content changes
 Works with GitHub (now) and Azure Blob (later)
 
