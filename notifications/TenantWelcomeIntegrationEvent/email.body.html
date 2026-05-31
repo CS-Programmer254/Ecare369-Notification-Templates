@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to E-Care 369</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f6f8; font-family:'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color:#1f2937;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f6f8; padding:24px 0;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px; max-width:100%; background-color:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#0d9488 0%,#0f766e 100%); padding:32px 40px; text-align:center;">
+              <div style="font-size:24px; font-weight:700; color:#ffffff; letter-spacing:0.5px;">E-Care 369</div>
+              <div style="font-size:13px; color:#d1fae5; margin-top:4px;">Telemedicine &amp; Health Management Platform</div>
+            </td>
+          </tr>
+
+          <!-- Greeting -->
+          <tr>
+            <td style="padding:36px 40px 8px 40px;">
+              <h1 style="margin:0 0 12px 0; font-size:22px; color:#0f172a;">Welcome aboard, {{TenantName}}! 🎉</h1>
+              <p style="margin:0; font-size:15px; line-height:1.6; color:#475569;">
+                Your organization has been successfully onboarded to E-Care 369. Everything is ready for your team
+                to start delivering connected care. Below are the details your users will need to sign in.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Tenant code highlight -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#ecfdf5; border:1px solid #a7f3d0; border-radius:10px;">
+                <tr>
+                  <td style="padding:20px 24px; text-align:center;">
+                    <div style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#047857; font-weight:600;">Your Tenant Code</div>
+                    <div style="font-size:30px; font-weight:800; color:#065f46; letter-spacing:3px; margin:8px 0;">{{TenantCode}}</div>
+                    <div style="font-size:13px; color:#047857;">Share this code with your users — it is required to log in.</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- License summary -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <h2 style="margin:0 0 12px 0; font-size:16px; color:#0f172a;">License Summary</h2>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2e8f0; border-radius:10px; border-collapse:separate; overflow:hidden;">
+                <tr>
+                  <td style="padding:12px 18px; font-size:14px; color:#64748b; background-color:#f8fafc; width:45%;">License Number</td>
+                  <td style="padding:12px 18px; font-size:14px; color:#0f172a; font-weight:600;">{{LicenseNumber}}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 18px; font-size:14px; color:#64748b; background-color:#f8fafc;">Status</td>
+                  <td style="padding:12px 18px; font-size:14px; color:#0f172a; font-weight:600;">{{LicenseStatus}}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 18px; font-size:14px; color:#64748b; background-color:#f8fafc;">Issued</td>
+                  <td style="padding:12px 18px; font-size:14px; color:#0f172a;">{{IssuedDate}}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 18px; font-size:14px; color:#64748b; background-color:#f8fafc;">Expires</td>
+                  <td style="padding:12px 18px; font-size:14px; color:#0f172a;">{{ExpiryDate}}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 18px; font-size:14px; color:#64748b; background-color:#f8fafc;">Max Users</td>
+                  <td style="padding:12px 18px; font-size:14px; color:#0f172a;">{{MaxUsers}}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 18px; font-size:14px; color:#64748b; background-color:#f8fafc;">Max Branches</td>
+                  <td style="padding:12px 18px; font-size:14px; color:#0f172a;">{{MaxBranches}}</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Modules -->
+          <tr>
+            <td style="padding:24px 40px 8px 40px;">
+              <h2 style="margin:0 0 12px 0; font-size:16px; color:#0f172a;">Accessible Modules ({{ModuleCount}})</h2>
+              {{ModulesHtml}}
+            </td>
+          </tr>
+
+          <!-- CTA -->
+          <tr>
+            <td style="padding:28px 40px; text-align:center;">
+              <a href="{{LoginUrl}}" style="display:inline-block; background-color:#0d9488; color:#ffffff; text-decoration:none; font-size:15px; font-weight:600; padding:14px 36px; border-radius:8px;">Log in to E-Care 369</a>
+              <p style="margin:14px 0 0 0; font-size:12px; color:#94a3b8;">Or paste this link into your browser:<br />{{LoginUrl}}</p>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 40px; background-color:#f8fafc; border-top:1px solid #e2e8f0; text-align:center;">
+              <p style="margin:0; font-size:12px; color:#94a3b8; line-height:1.6;">
+                Need help getting started? Reply to this email and our team will assist you.<br />
+                &copy; E-Care 369 — Evans Healthcare. All rights reserved.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
